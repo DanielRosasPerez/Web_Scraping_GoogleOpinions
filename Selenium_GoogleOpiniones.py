@@ -43,7 +43,7 @@ def save_data(data, number_of_user):
     """This function saves the given data."""
     
     try:
-        with open(f"Opinions_from_Google/user_number_{number_of_user}.json", 'w') as json_outfile:
+        with open(f"user_number_{number_of_user}.json", 'w') as json_outfile:
             json.dump(data, json_outfile, ensure_ascii=False) # ENSURE_ASCII = FALSE. This way WE MAKE READABLE THE JSON FILE FOR THE HUMANS.
         print("DATA FROM THIS USER HAS BEEN STORED SUCCESSFULLY!!! LET'S GO WITH THE NEXT USER.")
     except Exception as e:
